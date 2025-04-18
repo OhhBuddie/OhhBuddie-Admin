@@ -46,7 +46,16 @@ return [
             'visibility' => 'public',
         ],
         
- 
+        's3' => [
+            'driver' => 's3',
+            'key' => 'AKIASE5KRNBWPLLDETZJ',
+            'secret' => '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',
+            'region' => 'ap-southeast-1',
+            'bucket' => 'fileuploaderbucket',
+            'url' => env('AWS_URL'),
+            'endpoint' => env('AWS_ENDPOINT'),
+            'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
+        ],
 
 
         // 's3' => [
